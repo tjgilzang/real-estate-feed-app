@@ -1,0 +1,12 @@
+
+> real-estate-feed-app@0.1.0 dev
+> next dev -p 3000
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.45.69:3000
+- Environments: .env
+
+✓ Starting...
+✓ Ready in 402ms
+ HEAD / 200 in 397ms (compile: 329ms, render: 68ms)

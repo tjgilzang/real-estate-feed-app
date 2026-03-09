@@ -1,0 +1,6 @@
+
+> real-estate-feed-app@0.1.0 seed
+> ts-node db/seed.ts
+
+DB 연결 확인: file:./dev.db
+Seed 완료: 매물 7건 입력

@@ -1,0 +1,54 @@
+
+> real-estate-feed-app@0.1.0 dev
+> next dev -p 4000 -p 4000
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/tj/.openclaw/workspace/agents/architect/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/package-lock.json
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:4000
+- Network:       http://192.168.45.69:4000
+- Environments: .env
+
+✓ Starting...
+✓ Ready in 385ms
+Error: Can't resolve 'tailwindcss' in '/Users/tj/.openclaw/workspace/agents/architect'
+    [2m[at finishWithoutResolve (/Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/enhanced-resolve/lib/Resolver.js:586:18)][0m
+    [2m[at /Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/enhanced-resolve/lib/Resolver.js:678:14][0m
+    [2m[at /Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/enhanced-resolve/lib/Resolver.js:739:5][0m
+    [2m[at eval (eval at create (/Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/enhanced-resolve/lib/Resolver.js:739:5][0m
+    [2m[at eval (eval at create (/Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:27:1)][0m
+    [2m[at /Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js:89:43][0m
+    [2m[at /Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/enhanced-resolve/lib/Resolver.js:739:5][0m
+    [2m[at eval (eval at create (/Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)][0m
+    [2m[at /Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app/node_modules/enhanced-resolve/lib/Resolver.js:739:5][0m {
+  details: "resolve 'tailwindcss' in '/Users/tj/.openclaw/workspace/agents/architect'\n" +
+    '  Parsed request is a module\n' +
+    '  using description file: /Users/tj/.openclaw/workspace/agents/architect/package.json (relative path: .)\n' +
+    '    resolve as module\n' +
+    '      looking for modules in /Users/tj/.openclaw/workspace/agents/architect/node_modules\n' +
+    '        single file module\n' +
+    '          using description file: /Users/tj/.openclaw/workspace/agents/architect/package.json (relative path: ./node_modules/tailwindcss)\n' +
+    '            no extension\n' +
+    "              /Users/tj/.openclaw/workspace/agents/architect/node_modules/tailwindcss doesn't exist\n" +
+    '            .css\n' +
+    "              /Users/tj/.openclaw/workspace/agents/architect/node_modules/tailwindcss.css doesn't exist\n" +
+    "        /Users/tj/.openclaw/workspace/agents/architect/node_modules/tailwindcss doesn't exist\n" +
+    "      /Users/tj/.openclaw/workspace/agents/node_modules doesn't exist or is not a directory\n" +
+    "      /Users/tj/.openclaw/workspace/node_modules doesn't exist or is not a directory\n" +
+    "      /Users/tj/.openclaw/node_modules doesn't exist or is not a directory\n" +
+    "      /Users/tj/node_modules doesn't exist or is not a directory\n" +
+    "      /Users/node_modules doesn't exist or is not a directory\n" +
+    "      /node_modules doesn't exist or is not a directory"
+}
+ GET / 200 in 821ms (compile: 728ms, render: 92ms)
+ GET / 200 in 34ms (compile: 2ms, render: 32ms)
+⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET /api/recommendations?region=Mapo&listingType=OFFICE&contractType=MONTHLY&minPrice=5000&maxPrice=9000&minStyleScore=60&limit=9 200 in 125ms (compile: 46ms, render: 79ms)
+ HEAD / 200 in 23ms (compile: 3ms, render: 19ms)

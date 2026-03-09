@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+enum ListingType {
+  APARTMENT
+  VILLA
+  TOWNHOUSE
+  OFFICE
+}
+
+enum ContractType {
+  JEONSE
+  MONTHLY
+  SALE
+}
+
+model Region {
+  id               Int       @id @default(autoincrement())
+  name             String    @unique
+  popularity       Float
+  preferenceWeight Float
+  description      String?
+  listings         Listing[]
+}
+
+model Listing {
+  id           Int          @id @default(autoincrement())
+  title        String
+  address      String
+  price        Int
+  area         Float
+  rooms        Int
+  bathrooms    Int
+  type         ListingType
+  contractType ContractType
+  listingDate  DateTime
+  rating       Float
+  styleScore   Int
+  description  String
+  neighborhood String
+  amenities    String?
+  region       Region       @relation(fields: [regionId], references: [id])
+  regionId     Int
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+}

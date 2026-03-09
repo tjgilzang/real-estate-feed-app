@@ -1,0 +1,15 @@
+
+> real-estate-feed-app@0.1.0 dev
+> next dev -p 3001
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.45.69:3001
+- Environments: .env
+
+✓ Starting...
+✓ Ready in 379ms
+ GET / 200 in 405ms (compile: 323ms, render: 82ms)
+⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET /api/recommendations?region=Mapo&listingType=OFFICE&contractType=MONTHLY&minPrice=5000&maxPrice=9000&minStyleScore=60&limit=9 200 in 184ms (compile: 106ms, render: 77ms)

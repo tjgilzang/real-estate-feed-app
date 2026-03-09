@@ -1,0 +1,6 @@
+
+> real-estate-feed-app@0.1.0 e2e
+> bash scripts/run_e2e_guard.sh
+
+[e2e-guard] run playwright against http://127.0.0.1:4000 (host=127.0.0.1)
+

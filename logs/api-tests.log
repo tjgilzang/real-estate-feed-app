@@ -1,0 +1,24 @@
+
+> real-estate-feed-app@0.1.0 pretest
+> npm run seed
+
+
+> real-estate-feed-app@0.1.0 seed
+> ts-node db/seed.ts
+
+DB 연결 확인: file:./dev.db
+Seed 완료: 매물 7건 입력
+
+> real-estate-feed-app@0.1.0 test
+> vitest run
+
+
+[1m[46m RUN [49m[22m [36mv4.0.18 [39m[90m/Users/tj/.openclaw/workspace/agents/architect/real-estate-feed-app[39m
+
+ [32m✓[39m tests/recommendations.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 75[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m3 passed[39m[22m[90m (3)[39m
+[2m   Start at [22m 17:34:28
+[2m   Duration [22m 650ms[2m (transform 39ms, setup 0ms, import 71ms, tests 75ms, environment 0ms)[22m
+

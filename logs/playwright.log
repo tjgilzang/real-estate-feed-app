@@ -1,0 +1,11 @@
+[e2e-guard] run playwright against http://127.0.0.1:4000 (host=127.0.0.1)
+
+Running 1 test using 1 worker
+
+(node:86869) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:86869) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/recommendations.spec.ts:3:5 › 추천 필터와 상세 카드 시나리오 (858ms)
+
+  1 passed (1.9s)
